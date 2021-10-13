@@ -4,6 +4,39 @@
   box-sizing: border-box;
 }
 
+:root {
+  --black: #0F0F0F;
+  --black-transp: #0F0F0Fcc;
+
+  --grey: #272727;
+  --grey-transp: #27272780;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background-color: var(--grey);
+}
+
+.nav-items {
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-value {
+  font-family: inherit;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+/* GRID ITEM */
+.item-img img{
+  width: 250px;
+  height: auto;
 }
