@@ -1,2 +1,2 @@
 # Countries
-> Search information about countries
+> Search for information about countries
