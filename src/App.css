@@ -61,9 +61,6 @@ body {
   min-height: 300px;
 }
 
-.grid-item-content {
-}
-
 .item-img {
   display: flex;
   justify-content: center;

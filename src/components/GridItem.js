@@ -3,13 +3,11 @@ import React, { useEffect, useState} from 'react'
 const GridItem = ({ name, population, flag, capital, currencies }) => {
   const [curr, setCurr] = useState("")
 
-
   useEffect(() => {
     for (const property in currencies) {
       setCurr(currencies[property]);
     }
   }, [])
-
 
   return (
     <div className="grid-item">
