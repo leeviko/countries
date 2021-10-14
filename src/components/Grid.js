@@ -14,6 +14,7 @@ const Grid = ({ result }) => {
               population={item.population} 
               flag={item.flags.svg} 
               capital={item.capital ? item.capital[0] : "Undefined"}
+              currencies={item.currencies}
             />
           ))
         }
