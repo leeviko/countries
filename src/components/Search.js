@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const Search = ({ query, setQuery }) => {
 
@@ -10,6 +10,7 @@ const Search = ({ query, setQuery }) => {
         onChange={(e) => setQuery(e.target.value)} 
         value={query} 
         className="search-value"
+        placeholder="Search for countries..."
       />
     </div>
   )

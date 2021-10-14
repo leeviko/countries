@@ -30,7 +30,9 @@ function App() {
   return (
     <div className="App">
       <Navbar query={query} setQuery={setQuery} />
-      <Grid result={result} />
+      <div className="result">
+        <Grid result={result} />
+      </div>
     </div>
   );
 }

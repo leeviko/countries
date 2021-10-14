@@ -5,11 +5,19 @@ import GridItem from './GridItem';
 const Grid = ({ result }) => {
   return (
     <div className="grid">
-      {
-        result.map((item, i) => (
-          <GridItem key={item.population} name={item.name.common} population={item.population} flag={item.flags.svg} />
-        ))
-      }
+      <div className="grid-container">
+        {
+          result.map((item, i) => (
+            <GridItem 
+              key={item.population + item.ccn3} 
+              name={item.name.common} 
+              population={item.population} 
+              flag={item.flags.svg} 
+              capital={item.capital ? item.capital[0] : "Undefined"}
+            />
+          ))
+        }
+      </div>
     </div>
   )
 }
