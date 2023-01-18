@@ -7,6 +7,7 @@ const Grid = ({ result }) => {
     <div className="grid">
       <div className="grid-container">
         {
+          typeof result === "object" ?
           result.map((item, i) => (
             <GridItem 
               key={item.population + item.ccn3} 
@@ -17,6 +18,7 @@ const Grid = ({ result }) => {
               currencies={item.currencies}
             />
           ))
+          : <h3 className="error">{result}</h3>
         }
       </div>
     </div>

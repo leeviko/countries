@@ -7,7 +7,7 @@ const GridItem = ({ name, population, flag, capital, currencies }) => {
     for (const property in currencies) {
       setCurr(currencies[property]);
     }
-  }, [])
+  }, [currencies])
 
   return (
     <div className="grid-item">

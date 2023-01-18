@@ -20,7 +20,11 @@ function App() {
             setResult(res.data)
           })
           .catch(err => {
-            setResult("Something went wrong :(")
+            if(err.response.status === 404) {
+              setResult("Couldn't find anything")
+            } else {
+              setResult("Something went wrong :(")
+            }
           })
       }, 500);
       return () => clearTimeout(timer);
